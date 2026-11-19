@@ -1,167 +1,122 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="color-scheme" content="light dark" />
-  <meta name="theme-color" content="#ffffff" />
-  <title>Zyvor Vytrix · See what your machine is really doing</title>
-  <meta name="description" content="A read-only system activity monitor for macOS 26 or later: grouped applications, processes, ports and containers. Notarized download with a 30-day trial." />
-  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
-  <link rel="canonical" href="https://zyvorai.github.io/vytrix/" />
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Zyvor Vytrix" />
-  <meta property="og:title" content="Zyvor Vytrix · See what your machine is really doing" />
-  <meta property="og:description" content="Read-only system activity monitor for macOS 26 or later. Notarized download, 30-day trial." />
-  <meta property="og:url" content="https://zyvorai.github.io/vytrix/" />
-  <meta property="og:image" content="https://zyvorai.github.io/vytrix/ux/native-dark-overview.png" />
-  <meta property="og:image:width" content="2240" />
-  <meta property="og:image:height" content="1440" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:image" content="https://zyvorai.github.io/vytrix/ux/native-dark-overview.png" />
-  <script src="theme.js"></script>
-  <link rel="stylesheet" href="site.css" />
-  
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+<title>Zyvor Vytrix · See what your machine is really doing.</title>
+<meta name="description" content="A read-only system activity monitor for macOS 26 or later: grouped applications, processes, ports and containers. Notarized download with a 30-day trial.">
+<link rel="canonical" href="https://zyvorai.github.io/vytrix/">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Zyvor Vytrix">
+<meta property="og:title" content="Zyvor Vytrix · See what your machine is really doing.">
+<meta property="og:description" content="Read-only system activity monitor for macOS 26 or later. Notarized download, 30-day trial.">
+<meta property="og:url" content="https://zyvorai.github.io/vytrix/">
+<meta property="og:image" content="https://zyvorai.github.io/vytrix/social/og.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Vytrix: See what your machine is really doing. The app window shows demo data.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Zyvor Vytrix · See what your machine is really doing.">
+<meta name="twitter:description" content="Read-only system activity monitor for macOS 26 or later. Notarized download, 30-day trial.">
+<meta name="twitter:image" content="https://zyvorai.github.io/vytrix/social/og.png">
+<meta name="twitter:image:alt" content="Vytrix: See what your machine is really doing. The app window shows demo data.">
+<link rel="stylesheet" href="assets/landing.css">
+<style>:root{--accent-btn:#c2410c;--accent-ink:#c2410c;--accent-grad-a:#f56a21;--accent-grad-b:#ffb084}@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--accent-ink:#ff8a4c}}:root[data-theme="dark"]{--accent-ink:#ff8a4c}</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Zyvor Vytrix","applicationCategory":"DeveloperApplication","operatingSystem":"macOS","softwareVersion":"0.9.0","downloadUrl":"https://github.com/zyvorai/vytrix/releases/tag/v0.9.0","url":"https://zyvorai.github.io/vytrix/","description":"A read-only system activity monitor for macOS 26 or later: grouped applications, processes, ports and containers. Notarized download with a 30-day trial.","image":"https://zyvorai.github.io/vytrix/social/og.png","publisher":{"@type":"Organization","name":"Zyvor AI Labs Private Limited","url":"https://zyvor.dev"}}</script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-
-<header class="bar">
-  <a class="brand" href="./" aria-label="Vytrix home">
-    <svg class="logo" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#1d1d1f"/><path d="M5 18h5l3-9 5 16 3-7h6" fill="none" stroke="#f56a21" stroke-width="2.5" stroke-linejoin="round"/></svg><b>VYTRIX</b></a>
-  <nav aria-label="Sections" id="sections">
-    <a href="#download">Download</a><a href="#gallery">See it</a><a href="#tour">Tour</a><a href="#features">Features</a><a href="#mac">Mac app</a><a href="#support">Licence</a>
-  </nav>
-  <div class="bar-actions">
-    <button id="theme" class="icon" type="button" aria-label="Switch to dark mode" aria-pressed="false">
-      <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
-      <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
-    </button>
-    <a class="btn small" href="https://github.com/zyvorai/vytrix/releases/tag/v0.9.0">Release</a>
-    <a class="btn small primary" href="#download">Download</a>
-  </div>
+<header class="nav">
+  <a class="brand" href="./" aria-label="Zyvor Vytrix home"><img src="favicon.svg" width="26" height="26" alt=""><span>Vytrix</span></a>
+  <nav aria-label="Primary"><ul><li><a href="#features">Features</a></li><li><a href="#specs">Specs</a></li><li><a href="#start">Get started</a></li><li><a href="#pricing">Pricing</a></li><li><a href="#faq">FAQ</a></li><li><a href="https://github.com/zyvorai/vytrix/tree/main/docs">Docs</a></li></ul></nav>
+  <a class="btn small primary" href="https://github.com/zyvorai/vytrix/releases/tag/v0.9.0">Download</a>
 </header>
-
 <main id="main">
-  <section class="hero">
-    <p class="kicker">Zyvor · system monitor</p>
-    <h1>See what your machine is <em>really doing.</em></h1>
-    <p class="lede">A <strong>read-only</strong> system activity monitor for macOS 26 or later. Applications grouped the way you think about them, processes, listening ports, project folders and containers, in one native window and the menu bar.</p>
-    <p class="cta"><a class="btn primary" href="#download">Download Vytrix 0.9.0</a><a class="link" href="https://github.com/zyvorai/vytrix/releases/tag/v0.9.0">Release notes and checksum</a></p>
-    <ul class="chips" aria-label="Platforms"><li class="ro">Read-only</li><li>macOS 26+</li><li>Notarized</li><li>30-day trial</li></ul>
-  </section>
+<section class="hero" aria-labelledby="top">
+  <img class="icon" src="favicon.svg" width="96" height="96" alt="Vytrix app icon">
+  <p class="eyebrow">Zyvor · system monitor</p>
+  <h1 id="top">Vytrix</h1>
+  <p class="tagline">See what your machine is really doing.</p>
+  <p class="promise"><strong>A read-only activity monitor for macOS.</strong> Applications grouped the way you think about them, processes, listening ports, project folders and containers, in one native window and the menu bar. It watches. It never kills, signals or changes anything.</p>
+  <p class="cta"><a class="btn primary" href="https://github.com/zyvorai/vytrix/releases/tag/v0.9.0">Download the 30-day trial</a><a class="textlink" href="#features">Learn more</a></p>
+  <p class="fine">macOS 26 or later · notarized · Free 30-day trial key: sales@zyvor.dev</p>
+  <figure class="shot hero-shot"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/img/hero-overview-dark-1200.webp 1200w, assets/img/hero-overview-dark-1800.webp 1800w" sizes="(min-width:1080px) 1040px, 100vw"><img src="assets/img/hero-overview-light-1200.webp" srcset="assets/img/hero-overview-light-1200.webp 1200w, assets/img/hero-overview-light-1800.webp 1800w" sizes="(min-width:1080px) 1040px, 100vw" width="2240" height="1440" alt="Vytrix Overview: CPU, memory, disk, network, applications and containers as tiles, an activity chart and the top consumers by CPU." fetchpriority="high" decoding="async"></picture><figcaption>The Overview. Demo data on simulated telemetry, not a real Mac.</figcaption></figure>
+</section>
 
-  <section id="gallery" class="gallery">
-    <h2>See it</h2>
-    <p class="sub">Every screenshot is the real app on simulated telemetry (host <code>zyvor-dev-01</code>), not a capture of a real machine.</p>
-    <div class="controls" id="controls">
-      <div class="seg" role="radiogroup" aria-label="Appearance" data-key="mode">
-        <button type="button" role="radio" aria-checked="false" data-value="light">Light</button>
-        <button type="button" role="radio" aria-checked="true" data-value="dark">Dark</button>
-      </div>
-      <div class="seg wide" role="radiogroup" aria-label="View" data-key="view">
-        <button type="button" role="radio" aria-checked="true" data-value="overview">Overview</button>
-        <button type="button" role="radio" aria-checked="false" data-value="applications">Applications</button>
-        <button type="button" role="radio" aria-checked="false" data-value="containers">Containers</button>
-        <button type="button" role="radio" aria-checked="false" data-value="projects">Projects</button>
-        <button type="button" role="radio" aria-checked="false" data-value="alerts">Alerts</button>
-      </div>
-    </div>
-    <figure class="shot"><img id="shot" src="ux/native-dark-overview.png" width="2240" height="1440" alt="The Vytrix Mac app, Overview, dark" />
-      <figcaption id="shot-cap">Dark · Overview</figcaption></figure>
-  </section>
+<section class="band" aria-label="Overview">
+  <h2>One window. Every question.</h2>
+  <p>Which app is it? Which container? What is on port 5173? Vytrix answers from read-only readings, and never touches what it shows.</p>
+</section>
 
-  <section class="band" aria-label="Promises">
-    <div><b>Read-only</b><span>It watches. It never kills, signals or changes anything.</span></div>
-    <div><b>Notarized</b><span>Developer ID signed and notarized by Apple.</span></div>
-    <div><b>Local-first</b><span>History stays on your Mac.</span></div>
-    <div><b>Honest numbers</b><span>App memory is RSS. Not collected means absent, not zero.</span></div>
-  </section>
+<div id="features">
+<h2 class="sr">Features</h2>
+<section class="feature" id="overview" aria-labelledby="h-overview"><div class="grid"><div class="copy"><p class="eyebrow">Overview</p><h3 id="h-overview">Everything, at a glance.</h3><p>CPU, memory, disk and network, and the busiest applications, on one screen. A counter that is not available is shown as absent, never as zero.</p></div><figure class="shot"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/img/overview-dark-1200.webp 1200w, assets/img/overview-dark-1800.webp 1800w" sizes="(min-width:960px) 62vw, 100vw"><img src="assets/img/overview-light-1200.webp" srcset="assets/img/overview-light-1200.webp 1200w, assets/img/overview-light-1800.webp 1800w" sizes="(min-width:960px) 62vw, 100vw" width="2240" height="1440" alt="Vytrix Overview: tiles for CPU, memory, disk, network, applications and containers, an activity chart and the top consumers by CPU." loading="lazy" decoding="async"></picture><figcaption>Overview. Demo data.</figcaption></figure></div></section>
+<section class="feature flip" id="applications" aria-labelledby="h-applications"><div class="grid"><div class="copy"><p class="eyebrow">Applications</p><h3 id="h-applications">Which app is it?</h3><p>Processes grouped by executable or .app bundle, with CPU and memory per application and a process sheet one click away.</p><a class="textlink" href="https://github.com/zyvorai/vytrix/blob/main/CHANGELOG.md">Release notes</a></div><figure class="shot"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/img/applications-dark-1200.webp 1200w, assets/img/applications-dark-1800.webp 1800w" sizes="(min-width:960px) 62vw, 100vw"><img src="assets/img/applications-light-1200.webp" srcset="assets/img/applications-light-1200.webp 1200w, assets/img/applications-light-1800.webp 1800w" sizes="(min-width:960px) 62vw, 100vw" width="2240" height="1440" alt="Vytrix Applications view: one row per application with its process count, CPU, memory and listening ports." loading="lazy" decoding="async"></picture><figcaption>Applications view. Demo data.</figcaption></figure></div></section>
+<section class="feature" id="containers" aria-labelledby="h-containers"><div class="grid"><div class="copy"><p class="eyebrow">Containers</p><h3 id="h-containers">Which container?</h3><p>Container state, CPU, memory against its limit and published ports for Docker and Podman, from read-only calls.</p></div><figure class="shot"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/img/containers-dark-1200.webp 1200w, assets/img/containers-dark-1800.webp 1800w" sizes="(min-width:960px) 62vw, 100vw"><img src="assets/img/containers-light-1200.webp" srcset="assets/img/containers-light-1200.webp 1200w, assets/img/containers-light-1800.webp 1800w" sizes="(min-width:960px) 62vw, 100vw" width="2240" height="1440" alt="Vytrix Containers view: Docker and Podman availability and a list of containers with image, published ports, CPU and memory against the limit." loading="lazy" decoding="async"></picture><figcaption>Containers view. Demo data.</figcaption></figure></div></section>
+<section class="feature flip" id="projects" aria-labelledby="h-projects"><div class="grid"><div class="copy"><p class="eyebrow">Projects</p><h3 id="h-projects">What is on port 5173?</h3><p>Listening ports tied to the application and its project folder, so a stray dev server is easy to find.</p></div><figure class="shot"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/img/projects-dark-1200.webp 1200w, assets/img/projects-dark-1800.webp 1800w" sizes="(min-width:960px) 62vw, 100vw"><img src="assets/img/projects-light-1200.webp" srcset="assets/img/projects-light-1200.webp 1200w, assets/img/projects-light-1800.webp 1800w" sizes="(min-width:960px) 62vw, 100vw" width="2240" height="1440" alt="Vytrix Projects view: project folders, each with the applications running from it, their listening ports and CPU." loading="lazy" decoding="async"></picture><figcaption>Projects view. Demo data.</figcaption></figure></div></section>
+<section class="feature" id="memory" aria-labelledby="h-memory"><div class="grid"><div class="copy"><p class="eyebrow">Honest numbers</p><h3 id="h-memory">App memory is RSS, and it says so.</h3><p>Memory is summed RSS and can count shared pages more than once. The screen tells you, next to the number.</p></div><figure class="shot"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/img/memory-dark-1200.webp 1200w, assets/img/memory-dark-1800.webp 1800w" sizes="(min-width:960px) 62vw, 100vw"><img src="assets/img/memory-light-1200.webp" srcset="assets/img/memory-light-1200.webp 1200w, assets/img/memory-light-1800.webp 1800w" sizes="(min-width:960px) 62vw, 100vw" width="2240" height="1440" alt="Vytrix Memory view: installed, in use and available memory, a history chart and memory by application, with a note that app memory is summed RSS." loading="lazy" decoding="async"></picture><figcaption>Memory view. Demo data.</figcaption></figure></div></section>
+<section class="feature flip" id="alerts" aria-labelledby="h-alerts"><div class="grid"><div class="copy"><p class="eyebrow">Alerts</p><h3 id="h-alerts">Tell me when.</h3><p>Threshold alerts on CPU, memory, disk and containers, at a level you set. Notifications are informational. Vytrix does not act on any alert.</p></div><figure class="shot"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/img/alerts-dark-1200.webp 1200w, assets/img/alerts-dark-1800.webp 1800w" sizes="(min-width:960px) 62vw, 100vw"><img src="assets/img/alerts-light-1200.webp" srcset="assets/img/alerts-light-1200.webp 1200w, assets/img/alerts-light-1800.webp 1800w" sizes="(min-width:960px) 62vw, 100vw" width="2240" height="1440" alt="Vytrix Alerts view: a threshold slider set to 80 percent, a notify checkbox and a No active alerts message." loading="lazy" decoding="async"></picture><figcaption>Alerts view. Demo data.</figcaption></figure></div></section>
+</div>
 
-  <section id="tour" class="tour" aria-labelledby="tour-h">
-    <h2 id="tour-h">One window. Every question.</h2>
-    <p class="sub">Scroll through what Vytrix shows. Every image is the real app on simulated telemetry.</p>
-    <div class="tour-grid">
-      <ol class="steps" id="steps">
-      <li class="step" data-view="overview" data-label="Overview" tabindex="0" aria-current="true">
-        <span class="n">01</span><h3>Everything, at a glance</h3><p>CPU, memory, disk and network, and the busiest applications, on one screen. A counter that is not available is shown as absent, never as zero.</p>
-        <figure class="device step-img"><img data-view="overview" src="ux/native-dark-overview.png" width="2240" height="1440" alt="Vytrix Overview view on simulated telemetry" loading="lazy" decoding="async" /></figure>
-      </li>
-      <li class="step" data-view="applications" data-label="Applications" tabindex="0">
-        <span class="n">02</span><h3>Which app is it?</h3><p>Processes grouped by executable or .app bundle, with CPU and memory per application and a process sheet one click away. App memory is RSS.</p>
-        <figure class="device step-img"><img data-view="applications" src="ux/native-dark-applications.png" width="2240" height="1440" alt="Vytrix Applications view on simulated telemetry" loading="lazy" decoding="async" /></figure>
-      </li>
-      <li class="step" data-view="containers" data-label="Containers" tabindex="0">
-        <span class="n">03</span><h3>Which container?</h3><p>Container state, CPU, memory against its limit, network I/O and published ports, from read-only calls.</p>
-        <figure class="device step-img"><img data-view="containers" src="ux/native-dark-containers.png" width="2240" height="1440" alt="Vytrix Containers view on simulated telemetry" loading="lazy" decoding="async" /></figure>
-      </li>
-      <li class="step" data-view="projects" data-label="Projects" tabindex="0">
-        <span class="n">04</span><h3>What is on port 5173?</h3><p>Listening ports tied to the application and its project folder, so a stray dev server is easy to find.</p>
-        <figure class="device step-img"><img data-view="projects" src="ux/native-dark-projects.png" width="2240" height="1440" alt="Vytrix Projects view on simulated telemetry" loading="lazy" decoding="async" /></figure>
-      </li>
-      <li class="step" data-view="alerts" data-label="Alerts" tabindex="0">
-        <span class="n">05</span><h3>Tell me when</h3><p>Threshold alerts on CPU, memory, disk and containers, at a level you set. No notifications you did not ask for.</p>
-        <figure class="device step-img"><img data-view="alerts" src="ux/native-dark-alerts.png" width="2240" height="1440" alt="Vytrix Alerts view on simulated telemetry" loading="lazy" decoding="async" /></figure>
-      </li>
-      </ol>
-      <div class="stage">
-        <figure class="device"><img id="stage-img" src="ux/native-dark-overview.png" width="2240" height="1440" alt="Vytrix Overview on simulated telemetry" decoding="async" />
-          <figcaption id="stage-cap">Overview · simulated telemetry</figcaption></figure>
-      </div>
-    </div>
-  </section>
+<section class="more" aria-labelledby="more-h">
+  <h2 id="more-h">New in 0.9.0.</h2>
+  <div class="cards"><div class="card"><h3>Capacity outlook</h3><p>Local trend and anomaly detection that estimates time to limit for CPU, memory and disk. No telemetry leaves Vytrix.</p></div><div class="card"><h3>Process inspector</h3><p>Open any process from an application and see its details in one sheet.</p></div><div class="card"><h3>CSV export of Applications</h3><p>Export the grouped applications table to CSV for a spreadsheet or a ticket.</p></div><div class="card"><h3>Menu bar disk and battery</h3><p>Disk and battery rows in the menu bar popover next to CPU, memory and the busiest apps.</p></div></div>
+</section>
 
-  <section id="features">
-    <h2>New in 0.9.0</h2>
-    <div class="grid">
-      <article class="card"><h3>Capacity outlook</h3><p>Local trend and anomaly detection that estimates time to limit for CPU, memory and disk. No telemetry leaves Vytrix.</p></article>
-      <article class="card"><h3>Process inspector</h3><p>Open any process from an application and see its details in one sheet.</p></article>
-      <article class="card"><h3>CSV export of Applications</h3><p>Export the grouped applications table to CSV for a spreadsheet or a ticket.</p></article>
-      <article class="card"><h3>Menu bar disk and battery</h3><p>Disk and battery rows in the menu bar popover next to CPU, memory and the busiest apps.</p></article>
-      <article class="card"><h3>Which app is it?</h3><p>Processes grouped by executable or <code>.app</code> bundle, with CPU and memory per application. App memory is RSS.</p></article>
-      <article class="card"><h3>Safe to leave running</h3><p>Read-only: it never kills, signals or changes anything.</p></article>
-    </div>
-  </section>
+<section class="privacy" aria-labelledby="privacy-h">
+  <h2 id="privacy-h">Safe to leave running.</h2>
+  <div class="cards"><div class="card"><h3>Read-only</h3><p>It watches. It never kills, signals or changes anything.</p></div><div class="card"><h3>Local-first</h3><p>History stays on your Mac.</p></div><div class="card"><h3>Honest numbers</h3><p>App memory is RSS. Not collected means absent, not zero.</p></div></div>
+</section>
 
-  <section id="mac" class="mac" aria-labelledby="mac-h">
-    <h2 id="mac-h">Native on the Mac</h2>
-    <p class="sub">A SwiftUI app: a menu bar item (CPU, host totals, alert count, busiest apps), local notifications once per alert, a System widget and two Shortcuts actions. Read-only like everything else.</p>
-    <figure class="device wide"><img data-native="overview" src="ux/native-dark-overview.png" width="2240" height="1440" alt="The native Vytrix app, Overview, on simulated telemetry" loading="lazy" decoding="async" />
-      <figcaption>The native app on simulated telemetry.</figcaption></figure>
-    <div class="duo">
-      <figure class="device"><img data-native="applications" src="ux/native-dark-applications.png" width="2240" height="1440" alt="The native Vytrix app, Applications" loading="lazy" decoding="async" /></figure>
-      <figure class="device"><img data-native="containers" src="ux/native-dark-containers.png" width="2240" height="1440" alt="The native Vytrix app, Containers" loading="lazy" decoding="async" /></figure>
-    </div>
-    <ul class="ticks">
-      <li><b>Menu bar</b><span>Closing the window keeps Vytrix in the menu bar; Quit stops it and its collector.</span></li>
-      <li><b>Notifications</b><span>Your alert rules, once per alert, never for demo data.</span></li>
-      <li><b>Widget and Shortcuts</b><span>"What is using my CPU?" and "How is my Mac doing?" answer from the app's last reading.</span></li>
-      <li><b>Time Machine</b><span>Scrub back through recently stored samples and return to live.</span></li>
-    </ul>
-  </section>
+<section class="specs" id="specs" aria-labelledby="specs-h">
+  <h2 id="specs-h">Specs and requirements.</h2>
+  <dl class="specs-grid"><div class="spec"><dt>Requires</dt><dd>macOS 26 or later</dd></div><div class="spec"><dt>Build</dt><dd>Signed and notarized<small>Developer ID signed and notarized by Apple, so it opens without a Gatekeeper prompt.</small></dd></div><div class="spec"><dt>Version</dt><dd>0.9.0<small>Free 30-day trial key: sales@zyvor.dev</small></dd></div><div class="spec"><dt>Mode</dt><dd>Read-only<small>It never kills, signals or changes anything.</small></dd></div><div class="spec"><dt>Mac app</dt><dd>Menu bar, widget, Shortcuts<small>Menu bar item, local notifications, a System widget and two Shortcuts actions.</small></dd></div><div class="spec"><dt>Data</dt><dd>Local-first<small>History stays on your Mac.</small></dd></div></dl>
+  <div class="limit" role="note"><h3>Honest limits</h3><p>History shows samples since the collector started, up to 30 days in its SQLite file. <b>GPU, fans, audio and Bluetooth are not collected in this release.</b> Per-app bandwidth is not collected, and container CPU and memory on macOS are relative to the Linux VM that runs Docker or Podman, not to the Mac. Notifications never fire for demo data.</p></div>
+</section>
 
-  <section id="download">
-    <h2>Download Vytrix 0.9.0</h2>
-    <p class="sub">Vytrix 0.9.0 for Mac is Developer ID signed and notarized by Apple, so it opens without a Gatekeeper prompt. It requires <strong>macOS 26 or later</strong>. Open the DMG and drag Vytrix to Applications.</p>
-    <p class="sub"><b>Free 30-day trial key: sales@zyvor.dev</b>. Write to <a href="mailto:sales@zyvor.dev?subject=Vytrix%20trial%20key">sales@zyvor.dev</a> for a trial key. To keep using Vytrix afterwards, get a licence at <a href="https://zyvor.dev/buy">zyvor.dev/buy</a>.</p>
-    <p class="cta"><a class="btn primary" href="https://github.com/zyvorai/vytrix/releases/download/v0.9.0/Vytrix-0.9.0.dmg">Download Vytrix-0.9.0.dmg</a><a class="link" href="https://github.com/zyvorai/vytrix/releases/tag/v0.9.0">Release notes and SHA-256 checksum</a></p>
-    <p class="sub">SHA-256: <code>20f71768b880ed2d110e104f609126c069446dc8ea85f5f3a49b054b71bdee0c</code></p>
-  </section>
+<section class="steps" id="start" aria-labelledby="steps-h">
+  <h2 id="steps-h">Get started in three steps.</h2>
+  <ol><li><h3>Download</h3><p>Get <code>Vytrix-0.9.0.dmg</code> from the release page. The SHA-256 is in the release notes and in <code>Vytrix-0.9.0.dmg.sha256</code>.</p></li><li><h3>Install</h3><p>Open the DMG and drag Vytrix to Applications. It requires <b>macOS 26 or later</b>.</p></li><li><h3>Ask for a trial key</h3><p>Write to <a href="mailto:sales@zyvor.dev?subject=Vytrix%20trial%20key">sales@zyvor.dev</a> for a free 30-day trial key. To keep using Vytrix afterwards, get a licence at <a href="https://zyvor.dev/buy">zyvor.dev/buy</a>.</p></li></ol>
+  <div class="sha">
+    <p>Vytrix 0.9.0 for Mac · SHA-256</p>
+    <pre><code id="sha">20f71768b880ed2d110e104f609126c069446dc8ea85f5f3a49b054b71bdee0c</code></pre>
+    <p>Verify: <code>echo "20f71768b880ed2d110e104f609126c069446dc8ea85f5f3a49b054b71bdee0c Vytrix-0.9.0.dmg" | shasum -a 256 -c</code></p>
+  </div>
+  <p class="cta"><a class="btn primary" href="https://github.com/zyvorai/vytrix/releases/download/v0.9.0/Vytrix-0.9.0.dmg">Download Vytrix-0.9.0.dmg</a><a class="textlink" href="https://github.com/zyvorai/vytrix/releases/tag/v0.9.0">Release page</a><a class="textlink" href="https://github.com/zyvorai/vytrix#download">Install guide</a></p>
+</section>
 
-  <section id="support">
-    <h2>Support Vytrix</h2>
-    <p class="sub">If you run it in production or commercially, buy a production licence: ₹1,999 per Mac per year including GST (about US$20). Teams of 5 or more Macs: ₹3,499 per Mac per year, by invoice. A 30-day trial key is free: <a href="mailto:sales@zyvor.dev?subject=Vytrix%20trial%20key">sales@zyvor.dev</a>. Earlier ₹899 Supporter purchases keep their perpetual grant for the versions released to date. Not for redistribution or resale. Need a USD invoice or a licence for several entities? Write to <a href="mailto:sales@zyvor.dev?subject=Vytrix%20commercial%20license">sales@zyvor.dev</a> and we will send an invoice.</p>
-    <p class="cta"><a class="btn primary" href="https://rzp.io/rzp/tTFVA7PD" rel="noopener">Buy a production licence · ₹1,999 / year</a><a class="btn" href="https://zyvor.dev/buy" rel="noopener">zyvor.dev/buy</a></p>
-  </section>
+<section class="pricing" id="pricing" aria-labelledby="pricing-h">
+  <div class="inner">
+  <h2 id="pricing-h" style="text-align:left">Licence and pricing.</h2>
+  <p class="lead">If you run it in production or commercially, buy a production licence: <b>₹1,999 per Mac per year including GST (about US$20)</b>. Teams of 5 or more Macs: ₹3,499 per Mac per year, by invoice. A 30-day trial key is free: <a href="mailto:sales@zyvor.dev?subject=Vytrix%20trial%20key">sales@zyvor.dev</a>. Earlier ₹899 Supporter purchases keep their perpetual grant for the versions released to date. Not for redistribution or resale. Need a USD invoice or a licence for several entities? Write to <a href="mailto:sales@zyvor.dev?subject=Vytrix%20commercial%20license">sales@zyvor.dev</a> and we will send an invoice.</p>
+<div class="card buy"><h3>Signed &amp; notarized</h3><p>Developer ID signed and notarized by Apple. Requires macOS 26 or later.</p><p><b>₹1,999</b> per Mac per year incl. GST</p><p class="cta"><a class="btn primary" href="https://rzp.io/rzp/tTFVA7PD" rel="noopener">Buy a production licence · ₹1,999 / year</a><a class="btn ghost" href="https://zyvor.dev/buy" rel="noopener">zyvor.dev/buy</a></p></div>
+<p class="fine"><a href="https://github.com/zyvorai/vytrix/blob/main/docs/COMMERCIAL-LICENSE.md">Licence terms</a>.</p>
+  </div>
+</section>
 
-  </main>
-
-<footer>
-  <p><b>Vytrix</b> · &copy; 2026 Zyvor AI Labs Private Limited · <a href="https://zyvor.dev">zyvor.dev</a> · Zyvor Production License v1.0 · <a href="https://github.com/zyvorai/vytrix">GitHub</a> · <a href="https://github.com/zyvorai/vytrix/blob/main/SECURITY.md">Security</a> · <a href="https://github.com/zyvorai/vytrix/blob/main/CHANGELOG.md">Changelog</a> · <a href="https://github.com/zyvorai/vytrix/releases/tag/v0.9.0">Release</a></p>
-  <p>The Vytrix source code is private.</p>
+<section class="faq" id="faq" aria-labelledby="faq-h">
+  <h2 id="faq-h">Questions, answered.</h2>
+  <details><summary>Does Vytrix change anything on my Mac?</summary><p>No. It is read-only: it never kills, signals or changes anything, and it does not act on any alert.</p></details>
+<details><summary>Is there a free trial?</summary><p>Yes: a free 30-day trial key from sales@zyvor.dev.</p></details>
+<details><summary>Will macOS warn me when I open Vytrix?</summary><p>No. The download is Developer ID signed and notarized by Apple, so it opens without a Gatekeeper prompt. The SHA-256 is on the release page if you want to verify it.</p></details>
+<details><summary>Which macOS versions?</summary><p>macOS 26 or later.</p></details>
+<details><summary>What does it not collect?</summary><p>GPU, fans, audio and Bluetooth are not collected in this release, and per-app bandwidth is not collected. A counter that is not available is shown as absent, never as zero.</p></details>
+<details><summary>Why does app memory look high?</summary><p>App memory is summed RSS and can count shared pages more than once. Vytrix says so beside the number.</p></details>
+<details><summary>What is in the menu bar?</summary><p>A menu bar item with CPU, host totals, alert count and the busiest apps, and as of 0.9.0 disk and battery rows. Closing the window keeps Vytrix in the menu bar; Quit stops it and its collector.</p></details>
+<details><summary>Are the screenshots a real machine?</summary><p>No. Every screenshot on this page is the real app on simulated telemetry (demo data), not a capture of a real machine.</p></details>
+</section>
+</main>
+<footer class="footer">
+  <p><strong>Zyvor Vytrix</strong> · The Vytrix source code is private.</p>
+  <p class="links"><a href="https://github.com/zyvorai/vytrix/tree/main/docs">Docs</a><a href="https://github.com/zyvorai/vytrix/blob/main/CHANGELOG.md">Changelog</a><a href="https://github.com/zyvorai/vytrix/releases/tag/v0.9.0">Release</a><a href="https://github.com/zyvorai/vytrix">GitHub</a><a href="https://github.com/zyvorai/vytrix/blob/main/LICENSE">LICENSE</a><a href="https://github.com/zyvorai/vytrix/blob/main/SECURITY.md">SECURITY</a><a href="mailto:sales@zyvor.dev">sales@zyvor.dev</a></p>
+  <p>© 2026 Zyvor AI Labs Private Limited · <a href="https://zyvor.dev">zyvor.dev</a> · Zyvor Production License v1.0</p>
 </footer>
-<div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
-<script src="site.js"></script>
 </body>
 </html>

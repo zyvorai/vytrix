@@ -1,49 +1,87 @@
 <div align="center">
 
-# Vytrix
+<img src="social/og.png" width="840" alt="Zyvor Vytrix: see what your machine is really doing. Native app window showing the Overview with demo data." />
 
-![Vytrix Overview, dark](docs/ux/native-dark-overview.png)
+# Vytrix
 
 ### See what your machine is really doing.
 
+A read-only system activity monitor for macOS. It never kills, signals or changes anything.
+
+<br />
+
+**[Download the 30-day trial](https://github.com/zyvorai/vytrix/releases/tag/v0.9.0)** &nbsp;·&nbsp; [Website](https://zyvorai.github.io/vytrix/) &nbsp;·&nbsp; [Buy a licence](https://zyvor.dev/buy)
+
+`Vytrix-0.9.0.dmg` · macOS 26 or later · Developer ID signed and notarized
+
 </div>
 
-**Vytrix is a read-only system activity monitor for macOS.** It groups processes by application, shows listening ports, project folders and containers, alerts you at a threshold you set, and lives in the menu bar. It never kills, signals or changes anything.
+---
 
-The Vytrix source code is private. This repository holds the documentation, the website and the downloads.
+## Download (trial)
 
-## Download
-
-- **Build:** `Vytrix-0.9.0.dmg`, Developer ID signed and notarized by Apple.
-- **Requires macOS 26 or later.**
-- **Release:** https://github.com/zyvorai/vytrix/releases/tag/v0.9.0 (the SHA-256 is in the release notes and in `Vytrix-0.9.0.dmg.sha256`).
-- **Website:** https://zyvorai.github.io/vytrix/
+| | |
+| --- | --- |
+| **Get it** | [Vytrix 0.9.0](https://github.com/zyvorai/vytrix/releases/tag/v0.9.0): `Vytrix-0.9.0.dmg` (the SHA-256 is in the release notes and in `Vytrix-0.9.0.dmg.sha256`) |
+| **Free 30-day trial key** | **sales@zyvor.dev** |
+| **Requirements** | macOS 26 or later |
+| **Notarized** | Developer ID signed and notarized by Apple |
 
 Open the DMG and drag Vytrix to Applications.
 
-## Trial and licence
+## See it
 
-Free 30-day trial key: sales@zyvor.dev
+*Screenshots are the native app on simulated telemetry (demo data).*
 
-Get a licence at https://zyvor.dev/buy. See [docs/COMMERCIAL-LICENSE.md](docs/COMMERCIAL-LICENSE.md) and [LICENSE](LICENSE) (Zyvor Production License v1.0).
+| Overview | Applications |
+| --- | --- |
+| <img src="docs/ux/native-dark-overview.png" alt="Overview, dark, demo data" width="420" /> | <img src="docs/ux/native-dark-applications.png" alt="Applications view, dark, demo data" width="420" /> |
+| <img src="docs/ux/native-light-overview.png" alt="Overview, light, demo data" width="420" /> | <img src="docs/ux/native-light-applications.png" alt="Applications view, light, demo data" width="420" /> |
 
-## What is new in 0.9.0
+| Containers | Projects | Alerts |
+| --- | --- | --- |
+| <img src="docs/ux/native-light-containers.png" alt="Containers view, light, demo data" width="280" /> | <img src="docs/ux/native-light-projects.png" alt="Projects view, light, demo data" width="280" /> | <img src="docs/ux/native-light-alerts.png" alt="Alerts view, light, demo data" width="280" /> |
 
-- Capacity outlook
+## What it does
+
+- **Overview:** CPU, memory, disk and network and the busiest applications on one screen. A counter that is not available is shown as absent, never as zero.
+- **Applications:** processes grouped by executable or `.app` bundle, with CPU and memory per application and a process sheet.
+- **Containers:** state, CPU, memory against the limit and published ports, from read-only calls.
+- **Projects:** listening ports tied to the application and its project folder.
+- **Alerts:** thresholds on CPU, memory, disk and containers, at a level you set. Notifications are informational; Vytrix does not act on any alert.
+- **Menu bar:** CPU, host totals, alert count and the busiest apps; closing the window keeps Vytrix in the menu bar.
+- **Read-only and local-first:** it never kills, signals or changes anything, and history stays on your Mac.
+
+### New in 0.9.0
+
+- Capacity outlook: local trend and anomaly detection with a time-to-limit estimate for CPU, memory and disk
 - Process inspector
 - CSV export of Applications
 - Menu bar disk and battery rows
 
 See the [changelog](CHANGELOG.md).
 
-## Screenshots
+## Requirements and limits
 
-| Applications | Containers |
+- macOS 26 or later.
+- App memory is RSS. GPU, fans, audio and Bluetooth are not collected in this release, and per-app bandwidth is not collected.
+- Container CPU and memory on macOS are relative to the Linux VM that runs Docker or Podman, not to the Mac.
+
+## Trial and licence
+
+- **Free 30-day trial key: sales@zyvor.dev.**
+- **Licence:** https://zyvor.dev/buy. Earlier paid purchases keep their perpetual grant for versions released to date.
+- Terms: [docs/COMMERCIAL-LICENSE.md](docs/COMMERCIAL-LICENSE.md). Licensed under the [Zyvor Production License v1.0](LICENSE). See also [NOTICE](NOTICE).
+
+## Documentation
+
+| Doc | Topic |
 | --- | --- |
-| ![Applications](docs/ux/native-dark-applications.png) | ![Containers](docs/ux/native-dark-containers.png) |
+| [Website](https://zyvorai.github.io/vytrix/) | The product page |
+| [docs/README.md](docs/README.md) | Index of the documentation |
+| [Commercial licence](docs/COMMERCIAL-LICENSE.md) | The Supporter Commercial License |
+| [Changelog](CHANGELOG.md) · [Security](SECURITY.md) | Release notes, reporting (security@zyvor.dev) |
 
-*Simulated telemetry, not a capture of a real machine.*
+**The Vytrix source code is private.** This repository holds the documentation, website and downloads.
 
-## Security
-
-See [SECURITY.md](SECURITY.md). Report vulnerabilities to security@zyvor.dev.
+Copyright © 2026 Zyvor AI Labs Private Limited · [zyvor.dev](https://zyvor.dev)

@@ -1,8 +1,8 @@
 # Vytrix Supporter Commercial License
 
-Applies to payments made on the [Vytrix Supporter License page](https://payments.cashfree.com/forms/zyvor-vytrix-supporter) · [International (Razorpay)](https://rzp.io/rzp/tTFVA7PD). Governing law and tax terms are still to be completed by the Licensor (see the placeholders below and the open questions at the end).
+Applies to payments made on the [Vytrix payment page](https://rzp.io/rzp/tTFVA7PD). Governing law and tax terms are still to be completed by the Licensor (see the placeholders below and the open questions at the end).
 
-Vytrix is source-available under the Zyvor Production License v1.0 (`LICENSE`). Anyone may use it free for non-production purposes; production use needs a paid commercial license. This page describes the one-time paid Supporter grant that provides it. Draft replacement pricing is in [PRICING.md](PRICING.md) (not approved).
+Vytrix is source-available under the Zyvor Production License v1.0 (`LICENSE`). Anyone may use it free for non-production purposes; production use needs a paid commercial license. Since 19 November 2026 the production licence is annual: ₹1,999 per Mac per year including GST (about US$20); teams of 5 or more Macs pay ₹3,499 per Mac per year, by invoice. The grant below describes the earlier one-time Supporter licence (₹899), which earlier payers keep for the versions released to date.
 
 ## The grant
 
@@ -21,7 +21,7 @@ On receipt of the Supporter payment (₹899 including GST, about US$10, as shown
 
 ## Proof and terms
 
-- The payment receipt (Razorpay payment ID) is the Licensee's proof. There are no keys, accounts, or activation; the software never checks.
+- The payment receipt (Razorpay payment ID) is the Licensee's proof. Earlier Supporter purchasers need no key. The Mac app can show a licence key (for example the free 30-day trial key from sales@zyvor.dev); it never disables features and makes no network calls.
 - Provided as is, no warranty, under the same disclaimers as the Zyvor Production License v1.0.
 - Payments are non-refundable except as required by law.
 - Questions, receipts, USD invoices, and larger or multi-entity commercial licences: sales@zyvor.dev (invoiced separately, on terms agreed in writing).

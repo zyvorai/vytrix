@@ -10,7 +10,7 @@ The Mac app, notarized, with a 30-day trial. Requires macOS 26 or later.
 - **CSV export of Applications.**
 - **Menu bar disk and battery rows.**
 
-Free 30-day trial key: sales@zyvor.dev. Licence at https://zyvor.dev/buy. Earlier paid purchases keep their perpetual grant for versions released to date.
+The app runs without a key. For a free 30-day trial key, email sales@zyvor.dev. Licence at https://zyvor.dev/buy. Earlier paid purchases keep their perpetual grant for versions released to date.
 
 ## Earlier releases
 

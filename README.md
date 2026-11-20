@@ -23,7 +23,7 @@ A read-only system activity monitor for macOS. It never kills, signals or change
 | | |
 | --- | --- |
 | **Get it** | [Vytrix 0.9.0](https://github.com/zyvorai/vytrix/releases/tag/v0.9.0): `Vytrix-0.9.0.dmg` (the SHA-256 is in the release notes and in `Vytrix-0.9.0.dmg.sha256`) |
-| **Trial key** | The app runs without a key. For a free 30-day trial key, email **sales@zyvor.dev** |
+| **Trial key** | The app runs without a key. For a free 30-day trial key, email **sales@zyvor.dev**. The trial is soft: nothing is disabled and no data is lost when it ends |
 | **Requirements** | macOS 26 or later, Apple silicon only. Needs Python 3.10 or newer on your Mac for the collector (for example `brew install python`), or a collector running elsewhere |
 | **Notarized** | Developer ID signed and notarized by Apple |
 
@@ -70,7 +70,7 @@ See the [changelog](CHANGELOG.md).
 
 ## Trial and licence
 
-- The app runs without a key. For a free 30-day trial key, email sales@zyvor.dev.
+- The app runs without a key. For a free 30-day trial key, email sales@zyvor.dev. The trial is soft: nothing is disabled and no data is lost when it ends.
 - **Licence:** https://zyvor.dev/buy. Earlier paid purchases keep their perpetual grant for versions released to date.
 - Terms: [docs/COMMERCIAL-LICENSE.md](docs/COMMERCIAL-LICENSE.md). Licensed under the [Zyvor Production License v1.0](LICENSE). See also [NOTICE](NOTICE).
 

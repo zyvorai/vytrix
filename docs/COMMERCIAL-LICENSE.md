@@ -2,7 +2,7 @@
 
 Applies to payments made on the [Vytrix payment page](https://rzp.io/rzp/tTFVA7PD). Governing law and tax terms are still to be completed by the Licensor (see the placeholders below and the open questions at the end).
 
-Vytrix is source-available under the Zyvor Production License v1.0 (`LICENSE`). Anyone may use it free for non-production purposes; production use needs a paid commercial license. Since 19 November 2026 the production licence is annual: ₹1,999 per Mac per year including GST (about US$20); teams of 5 or more Macs pay ₹3,499 per Mac per year, by invoice. The grant below describes the earlier one-time Supporter licence (₹899), which earlier payers keep for the versions released to date.
+Vytrix is source-available under the Zyvor Production License v1.0 (`LICENSE`). Anyone may use it free for non-production purposes; production use needs a paid commercial license. Since 19 November 2026 the production licence is annual: ₹1,999 per Mac per year including GST (about US$20 excluding GST); teams of 5 or more Macs pay ₹1,699 per Mac per year (minimum 5 Macs, ₹8,495), by invoice, including Fleet Pro. The grant below describes the earlier one-time Supporter licence (₹899), which earlier payers keep for the versions released to date.
 
 ## The grant
 

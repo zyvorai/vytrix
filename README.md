@@ -80,7 +80,7 @@ See the [changelog](CHANGELOG.md).
 | --- | --- |
 | [Website](https://zyvorai.github.io/vytrix/) | The product page |
 | [docs/README.md](docs/README.md) | Index of the documentation |
-| [Commercial licence](docs/COMMERCIAL-LICENSE.md) | The Supporter Commercial License |
+| [Commercial licence](docs/COMMERCIAL-LICENSE.md) | Annual production licence terms and the legacy Supporter grant |
 | [Changelog](CHANGELOG.md) · [Security](SECURITY.md) | Release notes, reporting (security@zyvor.dev) |
 
 **The Vytrix source code is private.** This repository holds the documentation, website and downloads.

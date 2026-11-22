@@ -28,8 +28,9 @@
 <meta name="twitter:image" content="https://zyvorai.github.io/vytrix/social/og.png">
 <meta name="twitter:image:alt" content="Vytrix: See what your machine is really doing. The app window shows demo data.">
 <link rel="stylesheet" href="assets/landing.css">
+<link rel="stylesheet" href="assets/zyvor-buyer.css">
 <style>:root{--accent-btn:#c2410c;--accent-ink:#c2410c;--accent-grad-a:#f56a21;--accent-grad-b:#ffb084}@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--accent-ink:#ff8a4c}}:root[data-theme="dark"]{--accent-ink:#ff8a4c}</style>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Zyvor Vytrix","applicationCategory":"DeveloperApplication","operatingSystem":"macOS","softwareVersion":"0.9.0","downloadUrl":"https://github.com/zyvorai/vytrix/releases/tag/v0.9.0","url":"https://zyvorai.github.io/vytrix/","description":"A read-only system activity monitor for macOS 26 or later: grouped applications, processes, ports and containers. Notarized download with a 30-day trial.","image":"https://zyvorai.github.io/vytrix/social/og.png","publisher":{"@type":"Organization","name":"Zyvor AI Labs Private Limited","url":"https://zyvor.dev"},"offers":[{"@type":"Offer","name":"Vytrix production licence per Mac per year (India, incl. 18% GST)","price":"1999","priceCurrency":"INR","url":"https://zyvor.dev/buy#vytrix"},{"@type":"Offer","name":"Vytrix production licence per Mac per year (outside India, excl. tax)","price":"20","priceCurrency":"USD","url":"https://zyvor.dev/buy#vytrix"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Zyvor Vytrix","applicationCategory":"DeveloperApplication","operatingSystem":"macOS","softwareVersion":"0.9.0","downloadUrl":"https://github.com/zyvorai/vytrix/releases/tag/v0.9.0","url":"https://zyvorai.github.io/vytrix/","description":"A read-only system activity monitor for macOS 26 or later: grouped applications, processes, ports and containers. Notarized download with a 30-day trial.","image":"https://zyvorai.github.io/vytrix/social/og.png","publisher":{"@type":"Organization","name":"Zyvor AI Labs Private Limited","url":"https://zyvor.dev"}}</script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -45,9 +46,22 @@
   <h1 id="top">Vytrix</h1>
   <p class="tagline">See what your machine is really doing.</p>
   <p class="promise"><strong>A read-only activity monitor for macOS.</strong> Applications grouped the way you think about them, processes, listening ports, project folders and containers, in one native window and the menu bar. It watches. It never kills, signals or changes anything.</p>
-  <p class="cta"><a class="btn primary" href="https://github.com/zyvorai/vytrix/releases/tag/v0.9.0">Download the 30-day trial</a><a class="textlink" href="#features">Learn more</a></p>
-  <p class="fine">macOS 26 or later · Apple silicon · Python 3.10+ · notarized · The app runs without a key. For a free 30-day trial key, email sales@zyvor.dev. The trial is soft: nothing is disabled and no data is lost.</p>
+  <div class="buyer" role="group" aria-label="Get Vytrix">
+    <div class="actions">
+      <a class="btn primary" href="https://github.com/zyvorai/vytrix/releases/download/v0.9.0/Vytrix-0.9.0.dmg">Download Vytrix 0.9.0</a>
+      <a class="btn ghost" href="https://zyvor.dev/contact?intent=trial&amp;product=vytrix" rel="noopener">Ask for a 30-day trial</a>
+      <a class="btn ghost" href="https://zyvor.dev/buy" rel="noopener">Buy a license</a>
+    </div>
+    <p class="sub">Vytrix-0.9.0.dmg · <a href="https://zyvor.dev/pricing" rel="noopener">See current prices</a> · <a href="https://github.com/zyvorai/vytrix/releases/tag/v0.9.0">All downloads</a></p>
+    <p class="trust"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.2 8-8 9-4.8-1-8-4.5-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg><span><strong>Verified by Apple:</strong> Developer ID signed and notarized. This applies to the 0.9.0 DMG.</span></p>
+    <ul class="reqs"><li>Requires macOS 26 or later on Apple silicon, and Python 3.10 or newer for the collector.</li></ul>
+  </div>
   <figure class="shot hero-shot"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/img/hero-overview-dark-1200.webp 1200w, assets/img/hero-overview-dark-1800.webp 1800w" sizes="(min-width:1080px) 1040px, 100vw"><img src="assets/img/hero-overview-light-1200.webp" srcset="assets/img/hero-overview-light-1200.webp 1200w, assets/img/hero-overview-light-1800.webp 1800w" sizes="(min-width:1080px) 1040px, 100vw" width="2240" height="1440" alt="Vytrix Overview: CPU, memory, disk, network, applications and containers as tiles, an activity chart and the top consumers by CPU." fetchpriority="high" decoding="async"></picture><figcaption>The Overview. Demo data on simulated telemetry, not a real Mac.</figcaption></figure>
+</section>
+
+<section class="outcomes" aria-labelledby="outcomes-h">
+  <h2 id="outcomes-h">See what your Mac is really doing.</h2>
+  <ul class="tiles"><li class="tile"><h3>Find the app behind the load</h3><p>Processes are grouped by executable or .app bundle, with CPU and memory per application and a process sheet one click away.</p></li><li class="tile"><h3>Find what is on port 5173</h3><p>Listening ports are tied to the application and its project folder, so a stray dev server is easy to find.</p></li><li class="tile"><h3>Watch it, change nothing</h3><p>Vytrix never kills, signals or changes anything, and its history stays on your Mac.</p></li></ul>
 </section>
 
 <section class="band" aria-label="Overview">
@@ -92,13 +106,11 @@
   <p class="cta"><a class="btn primary" href="https://github.com/zyvorai/vytrix/releases/download/v0.9.0/Vytrix-0.9.0.dmg">Download Vytrix-0.9.0.dmg</a><a class="textlink" href="https://github.com/zyvorai/vytrix/releases/tag/v0.9.0">Release page</a><a class="textlink" href="https://github.com/zyvorai/vytrix#download">Install guide</a></p>
 </section>
 
-<section class="pricing" id="pricing" aria-labelledby="pricing-h">
-  <div class="inner">
-  <h2 id="pricing-h" style="text-align:left">Licence and pricing.</h2>
-  <p class="lead">If you run it in production or commercially, buy a production licence: <b>INR 1,999 per Mac per year incl. 18% GST in India (about US$20 excl. tax outside India)</b>. Teams of 5 or more Macs: INR 1,699 per Mac per year (about US$17 excl. tax; minimum 5 Macs, INR 8,495 or about US$86), by invoice, including Fleet Pro. Prices: INR incl. 18% GST in India; US dollars excl. tax elsewhere (VAT, GST or sales tax added where applicable). Pay online by UPI, card or netbanking; international cards work (charged in rupees); or request a US-dollar invoice by bank transfer. Custom pricing: contact sales@zyvor.dev. A 30-day trial key is free: <a href="mailto:sales@zyvor.dev?subject=Vytrix%20trial%20key">sales@zyvor.dev</a>. Earlier INR 899 Supporter purchases keep their perpetual grant for the versions released to date. Not for redistribution or resale. Need a licence for several entities? Write to <a href="mailto:sales@zyvor.dev?subject=Vytrix%20commercial%20license">sales@zyvor.dev</a> and we will send an invoice.</p>
-<div class="card buy"><h3>Signed &amp; notarized</h3><p>Developer ID signed and notarized by Apple. Requires macOS 26 or later on Apple silicon and Python 3.10 or newer.</p><p><b>INR 1,999</b> per Mac per year incl. GST (about <b>US$20</b> excl. tax outside India)</p><p class="cta"><a class="btn primary" href="https://zyvor.dev/buy#vytrix" rel="noopener">Buy a production licence</a><a class="btn ghost" href="mailto:sales@zyvor.dev?subject=Vytrix%2030-day%20trial%20key">Start 30-day trial</a></p></div>
-<p class="fine"><a href="https://github.com/zyvorai/vytrix/blob/main/docs/COMMERCIAL-LICENSE.md">Licence terms</a>.</p>
-  </div>
+<section class="buy-pointer" id="pricing" aria-labelledby="pricing-h">
+  <h2 id="pricing-h">Prices and licenses</h2>
+  <p>Current prices, in your currency where available, are on zyvor.dev. You can evaluate for 30 days before you decide.</p>
+  <p class="cta"><a class="btn primary" href="https://zyvor.dev/buy" rel="noopener">Buy a license</a><a class="btn ghost" href="https://zyvor.dev/contact?intent=trial&amp;product=vytrix" rel="noopener">Ask for a 30-day trial</a><a class="textlink" href="https://zyvor.dev/pricing" rel="noopener">See current prices</a></p>
+  <p class="fine"><a href="https://github.com/zyvorai/vytrix/blob/main/docs/COMMERCIAL-LICENSE.md">Licence terms</a> · Several Macs or a larger rollout: <a href="https://zyvor.dev/contact?intent=sales&amp;product=vytrix" rel="noopener">contact sales</a>.</p>
 </section>
 
 <section class="faq" id="faq" aria-labelledby="faq-h">
@@ -115,7 +127,7 @@
 </main>
 <footer class="footer">
   <p><strong>Zyvor Vytrix</strong> · The Vytrix source code is private.</p>
-  <p class="links"><a href="https://github.com/zyvorai/vytrix/tree/main/docs">Docs</a><a href="https://github.com/zyvorai/vytrix/blob/main/CHANGELOG.md">Changelog</a><a href="https://github.com/zyvorai/vytrix/releases/tag/v0.9.0">Release</a><a href="https://github.com/zyvorai/vytrix">GitHub</a><a href="https://github.com/zyvorai/vytrix/blob/main/LICENSE">LICENSE</a><a href="https://github.com/zyvorai/vytrix/blob/main/SECURITY.md">SECURITY</a><a href="mailto:sales@zyvor.dev">sales@zyvor.dev</a></p>
+  <p class="links"><a href="https://zyvor.dev/contact">Support</a><a href="https://github.com/zyvorai/vytrix/tree/main/docs">Docs</a><a href="https://github.com/zyvorai/vytrix/blob/main/CHANGELOG.md">Changelog</a><a href="https://github.com/zyvorai/vytrix/releases/tag/v0.9.0">Release</a><a href="https://github.com/zyvorai/vytrix">GitHub</a><a href="https://github.com/zyvorai/vytrix/blob/main/LICENSE">LICENSE</a><a href="https://github.com/zyvorai/vytrix/blob/main/SECURITY.md">SECURITY</a><a href="mailto:sales@zyvor.dev">sales@zyvor.dev</a></p>
   <p>© 2026 Zyvor AI Labs Private Limited · <a href="https://zyvor.dev">zyvor.dev</a> · Zyvor Production License v1.0</p>
 </footer>
 </body>

@@ -91,13 +91,13 @@
 
 <section class="specs" id="specs" aria-labelledby="specs-h">
   <h2 id="specs-h">Specs and requirements.</h2>
-  <dl class="specs-grid"><div class="spec"><dt>Requires</dt><dd>macOS 26 or later<small>Apple silicon only. Python 3.10 or newer for the collector (<code>brew install python</code>).</small></dd></div><div class="spec"><dt>Build</dt><dd>Signed and notarized<small>Developer ID signed. Notarized by Apple; macOS shows its standard first-open confirmation for apps downloaded from the internet.</small></dd></div><div class="spec"><dt>Version</dt><dd>0.9.0<small>The app runs without a key. For a free 30-day trial key, email sales@zyvor.dev.</small></dd></div><div class="spec"><dt>Mode</dt><dd>Read-only<small>It never kills, signals or changes anything.</small></dd></div><div class="spec"><dt>Mac app</dt><dd>Menu bar, widget, Shortcuts<small>Menu bar item, local notifications, a System widget and two Shortcuts actions.</small></dd></div><div class="spec"><dt>Data</dt><dd>Local-first<small>History stays on your Mac.</small></dd></div></dl>
+  <dl class="specs-grid"><div class="spec"><dt>Requires</dt><dd>macOS 26 or later<small>Apple silicon only. Python 3.10 or newer for the collector (<code>brew install python</code>).</small></dd></div><div class="spec"><dt>Build</dt><dd>Signed and notarized<small>Developer ID signed. Notarized by Apple; macOS shows its standard first-open confirmation for apps downloaded from the internet.</small></dd></div><div class="spec"><dt>Version</dt><dd>0.9.0<small>The app runs without a key. For a 30-day trial key, email sales@zyvor.dev.</small></dd></div><div class="spec"><dt>Mode</dt><dd>Read-only<small>It never kills, signals or changes anything.</small></dd></div><div class="spec"><dt>Mac app</dt><dd>Menu bar, widget, Shortcuts<small>Menu bar item, local notifications, a System widget and two Shortcuts actions.</small></dd></div><div class="spec"><dt>Data</dt><dd>Local-first<small>History stays on your Mac.</small></dd></div></dl>
   <div class="limit" role="note"><h3>Honest limits</h3><p>History shows samples since the collector started, up to 30 days in its SQLite file. <b>GPU, fans, audio and Bluetooth are not collected in this release.</b> Per-app bandwidth is not collected, and container CPU and memory on macOS are relative to the Linux VM that runs Docker or Podman, not to the Mac. Notifications never fire for demo data.</p></div>
 </section>
 
 <section class="steps" id="start" aria-labelledby="steps-h">
   <h2 id="steps-h">Get started in three steps.</h2>
-  <ol><li><h3>Download</h3><p>Get <code>Vytrix-0.9.0.dmg</code> from the release page. The SHA-256 is in the release notes and in <code>Vytrix-0.9.0.dmg.sha256</code>.</p></li><li><h3>Install</h3><p>Open the DMG and drag Vytrix to Applications. It requires <b>macOS 26 or later</b> on Apple silicon, and Python 3.10 or newer for the collector (<code>brew install python</code>).</p></li><li><h3>Ask for a trial key</h3><p>Write to <a href="mailto:sales@zyvor.dev?subject=Vytrix%20trial%20key">sales@zyvor.dev</a> for a free 30-day trial key. To keep using Vytrix afterwards, get a licence at <a href="https://zyvor.dev/buy">zyvor.dev/buy</a>.</p></li></ol>
+  <ol><li><h3>Download</h3><p>Get <code>Vytrix-0.9.0.dmg</code> from the release page. The SHA-256 is in the release notes and in <code>Vytrix-0.9.0.dmg.sha256</code>.</p></li><li><h3>Install</h3><p>Open the DMG and drag Vytrix to Applications. It requires <b>macOS 26 or later</b> on Apple silicon, and Python 3.10 or newer for the collector (<code>brew install python</code>).</p></li><li><h3>Ask for a trial key</h3><p>Write to <a href="mailto:sales@zyvor.dev?subject=Vytrix%20trial%20key">sales@zyvor.dev</a> for a 30-day trial key. To keep using Vytrix afterwards, get a licence at <a href="https://zyvor.dev/buy">zyvor.dev/buy</a>.</p></li></ol>
   <div class="sha">
     <p>Vytrix 0.9.0 for Mac · SHA-256</p>
     <pre><code id="sha">20f71768b880ed2d110e104f609126c069446dc8ea85f5f3a49b054b71bdee0c</code></pre>
@@ -116,7 +116,7 @@
 <section class="faq" id="faq" aria-labelledby="faq-h">
   <h2 id="faq-h">Questions, answered.</h2>
   <details><summary>Does Vytrix change anything on my Mac?</summary><p>No. It is read-only: it never kills, signals or changes anything, and it does not act on any alert.</p></details>
-<details><summary>Is there a free trial?</summary><p>Yes: a free 30-day trial key from sales@zyvor.dev. It is a soft trial: nothing is disabled and no data is lost when it ends.</p></details>
+<details><summary>Is there a trial?</summary><p>Yes: a 30-day trial key from sales@zyvor.dev. It is a soft trial: nothing is disabled and no data is lost when it ends.</p></details>
 <details><summary>Will macOS warn me when I open Vytrix?</summary><p>The download is Developer ID signed. Notarized by Apple; macOS shows its standard first-open confirmation for apps downloaded from the internet. The SHA-256 is on the release page if you want to verify it.</p></details>
 <details><summary>Which macOS versions?</summary><p>macOS 26 or later, on Apple silicon (no Intel build). The collector needs Python 3.10 or newer on your Mac (<code>brew install python</code>), or a collector running elsewhere.</p></details>
 <details><summary>What does it not collect?</summary><p>GPU, fans, audio and Bluetooth are not collected in this release, and per-app bandwidth is not collected. A counter that is not available is shown as absent, never as zero.</p></details>
@@ -128,7 +128,7 @@
 <footer class="footer">
   <p><strong>Zyvor Vytrix</strong> · The Vytrix source code is private.</p>
   <p class="links"><a href="https://zyvor.dev/contact">Support</a><a href="https://github.com/zyvorai/vytrix/tree/main/docs">Docs</a><a href="https://github.com/zyvorai/vytrix/blob/main/CHANGELOG.md">Changelog</a><a href="https://github.com/zyvorai/vytrix/releases/tag/v0.9.0">Release</a><a href="https://github.com/zyvorai/vytrix">GitHub</a><a href="https://github.com/zyvorai/vytrix/blob/main/LICENSE">LICENSE</a><a href="https://github.com/zyvorai/vytrix/blob/main/SECURITY.md">SECURITY</a><a href="mailto:sales@zyvor.dev">sales@zyvor.dev</a></p>
-  <p>© 2026 Zyvor AI Labs Private Limited · <a href="https://zyvor.dev">zyvor.dev</a> · Zyvor Production License v1.0</p>
+  <p>© 2026 Zyvor AI Labs Private Limited · <a href="https://zyvor.dev">zyvor.dev</a> · Zyvor Production Licence v2.0</p>
 </footer>
 </body>
 </html>

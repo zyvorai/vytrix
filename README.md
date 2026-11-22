@@ -23,7 +23,7 @@ A read-only system activity monitor for macOS. It never kills, signals or change
 | | |
 | --- | --- |
 | **Get it** | [Vytrix 0.9.0](https://github.com/zyvorai/vytrix/releases/tag/v0.9.0): `Vytrix-0.9.0.dmg` (the SHA-256 is in the release notes and in `Vytrix-0.9.0.dmg.sha256`) |
-| **Trial key** | The app runs without a key. For a free 30-day trial key, email **sales@zyvor.dev**. No data is lost when it ends; a commercial license is required to keep using it |
+| **Trial key** | The app runs without a key. For a 30-day trial key, email **sales@zyvor.dev**. No data is lost when it ends; a commercial license is required to keep using it |
 | **Requirements** | macOS 26 or later, Apple silicon only. Needs Python 3.10 or newer on your Mac for the collector (for example `brew install python`), or a collector running elsewhere |
 | **Notarized** | Developer ID signed and notarized by Apple |
 
@@ -70,9 +70,9 @@ See the [changelog](CHANGELOG.md).
 
 ## Trial and licence
 
-- The app runs without a key. For a free 30-day trial key, email sales@zyvor.dev. No data is lost when it ends; a commercial license is required to keep using it.
-- **Licence:** INR 1,999 per Mac per year incl. 18% GST in India (about US$20 excl. tax outside India); teams of 5+ Macs INR 1,699 per Mac (about US$17), minimum INR 8,495 (about US$86). [Buy](https://zyvor.dev/buy#vytrix); free 30-day trial above. Prices: INR incl. 18% GST in India; US dollars excl. tax elsewhere (VAT, GST or sales tax added where applicable). Pay online by UPI, card or netbanking; international cards work (charged in rupees); or request a US-dollar invoice by bank transfer. Custom pricing: contact sales@zyvor.dev. Earlier paid purchases keep their perpetual grant for versions released to date.
-- Terms: [docs/COMMERCIAL-LICENSE.md](docs/COMMERCIAL-LICENSE.md). Licensed under the [Zyvor Production License v1.0](LICENSE). See also [NOTICE](NOTICE).
+- The app runs without a key. For a 30-day trial key, email sales@zyvor.dev. No data is lost when it ends; a commercial license is required to keep using it.
+- **Licence:** INR 1,999 per Mac per year incl. 18% GST in India (about US$20 excl. tax outside India); teams of 5+ Macs INR 1,699 per Mac (about US$17), minimum INR 8,495 (about US$86). [Buy](https://zyvor.dev/buy#vytrix); 30-day trial above. Prices: INR incl. 18% GST in India; US dollars excl. tax elsewhere (VAT, GST or sales tax added where applicable). Pay online by UPI, card or netbanking; international cards work (charged in rupees); or request a US-dollar invoice by bank transfer. Custom pricing: contact sales@zyvor.dev. Earlier paid purchases keep their perpetual grant for versions released to date.
+- Terms: [docs/COMMERCIAL-LICENSE.md](docs/COMMERCIAL-LICENSE.md). Licensed under the [Zyvor Production Licence v2.0](LICENSE). See also [NOTICE](NOTICE).
 
 ## Documentation
 
